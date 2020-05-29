@@ -130,13 +130,18 @@
                                                         <h6><small class="text-muted">ID:</small></h6>
                                                     </div>
                                                     <div class="col-lg-4">
-                                                        <h6><strong style="color: maroon; text-align: left; padding-left: 0%"><td th:text="${customer.id}"/></strong></h6>
+                                                        <h6><strong
+                                                                style="color: maroon; text-align: left; padding-left: 0%"><td
+                                                                th:text="${customer.id}"/></strong></h6>
                                                     </div>
 
                                                     <div class="col-lg-3 update-col">
                                                         <h6>
-                                                            <a th:href="@{/update (id=${customer.id})}" style="color: maroon">
-                                                            <span style="font-weight: bolder">| </span> <small class="text-muted">UPDATE</small><span style="font-weight: bolder"> |</span>
+                                                            <a th:href="@{/update (id=${customer.id})}"
+                                                               style="color: maroon">
+                                                            <span style="font-weight: bolder">| </span> <small
+                                                                    class="text-muted">UPDATE</small><span
+                                                                    style="font-weight: bolder"> |</span>
                                                             </a>
 
                                                         </h6>
@@ -144,8 +149,11 @@
 
                                                     <div class="col-lg-3 delete-col">
                                                         <h6>
-                                                            <a th:href="@{/delete(id=${customer.id})}" style="color: maroon">
-                                                            <small class="text-muted" style="text-align: left">DELETE</small><span style="font-weight: bolder"> |</span>
+                                                            <a th:href="@{/delete(id=${customer.id})}"
+                                                               style="color: maroon">
+                                                            <small class="text-muted"
+                                                                   style="text-align: left">DELETE</small><span
+                                                                    style="font-weight: bolder"> |</span>
                                                             </a>
                                                         </h6>
                                                     </div>
@@ -156,25 +164,33 @@
                                                 <li class="list-group-item">
 
                                                         <h6><small class="text-muted" style="text-align: left">Customer Name:</small></h6>
-                                                        <p><strong><td th:text="${customer.customerName}"/></strong></p>
+
+                                                                <div class="left">
+                                                                    <span style="color: maroon"><h6>
+                                                                        <td th:text="${customer.customerName}"/></h6></span>
+                                                                </div>
 
                                                 </li>
                                                 <!--            ///////////////////-->
                                                 <li class="list-group-item">
                                                     <div class="row">
                                                             <h6><small class="text-muted">Phone Number:</small></h6>
-                                                        <div class="left" style="padding-left: 2rem">
-                                                            <td th:text="${customer.phoneNumber}"/>
-                                                        </div>
+                                                        <div class="left">
+                                                                    <span style="color: maroon; padding-left: 2rem">
+                                                                        <td th:text="${customer.phoneNumber}"/></span>
+                                                                </div>
                                                     </div>
                                                 </li>
                                                 <!--            ///////////////////-->
                                                 <li class="list-group-item">
                                                     <div class="row">
                                                             <h6><small class="text-muted">Pet Name:</small></h6>
-                                                        <div class="left" style="padding-left: 2rem">
-                                                            <td th:text="${customer.pet.petName}"/>
+                                                        <div class="left">
+                                                            <span style="color: maroon; padding-left: 2rem">
+                                                                <td th:text="${customer.pet.petName}"/></span>
                                                         </div>
+
+
                                                     </div>
                                                 </li>
                                                 <!--            ///////////////////-->
@@ -191,7 +207,8 @@
 
                                                             <div class="col-5">
                                                                 <div>
-                                                                    <h6><small class="text-muted">Pet Gender:</small></h6>
+                                                                    <h6><small
+                                                                            class="text-muted">Pet Gender:</small></h6>
                                                                 </div>
 
                                                             </div>
@@ -206,24 +223,26 @@
                                                         <div class="row">
                                                             <div class="col-4">
 
-                                                                <div class="left" >
-                                                                    <span style="color: maroon"><h6>
-                                                                        <td th:text="${customer.petType}"/></h6></span>
+                                                                <div class="left">
+                                                                    <span style="color: maroon">
+                                                                        <td th:text="${customer.petType}"/>
+                                                                    </span>
                                                                 </div>
                                                             </div>
 
                                                             <div class="col-5">
 
                                                                 <div class="left">
-                                                                    <span style="color: maroon"><h6>
-                                                                        <td th:text="${customer.pet.gender}"/></h6></span>
+                                                                    <span style="color: maroon">
+                                                                        <td th:text="${customer.pet.gender}"/></span>
                                                                 </div>
                                                             </div>
                                                             <div class="col-3">
 
-                                                                <div class="left" >
-                                                                    <td th:text="${customer.pet.age}"/>
-                                                                </div>
+                                                                <div class="left">
+                                                            <span style="color: maroon">
+                                                                <td th:text="${customer.pet.age}"/></span>
+                                                        </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -233,18 +252,23 @@
                                                 <li class="list-group-item">
                                                     <div class="row">
                                                             <h6><small class="text-muted">Breed Type:</small></h6>
-                                                        <div class="left" style="padding-left: 2rem">
-                                                            <td th:text="${customer.pet.breedType}"/>
-                                                        </div>
+
+
+                                                        <div class="left">
+                                                                    <span style="color: maroon; padding-left: 2rem">
+                                                                        <td th:text="${customer.pet.breedType}"/></span>
+                                                                </div>
                                                     </div>
                                                 </li>
                                                 <!--            ///////////////////-->
                                                 <li class="list-group-item">
                                                     <div class="row">
                                                             <h6><small class="text-muted">Pet Information:</small></h6>
-                                                        <div class="left" style="padding-left: 2rem">
-                                                            <td th:text="${customer.pet.getPetInfo()}"/>
-                                                        </div>
+
+                                                        <div class="left">
+                                                                    <span style="color: maroon; padding-left: 2rem">
+                                                                        <td th:text="${customer.pet.petInfo}"/></span>
+                                                                </div>
                                                     </div>
                                                 </li>
                                             </ul>
@@ -294,8 +318,8 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 <script>
-    $(function() {
-        $(document).scroll(function() {
+    $(function () {
+        $(document).scroll(function () {
             var $nav = $("#mainNavbar");
             $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
         })

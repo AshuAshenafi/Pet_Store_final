@@ -50,6 +50,7 @@ public class HomeController {
     @RequestMapping("/showall")
     public String showPetsPage(Model model){
         model.addAttribute("petOwners", customerService.showPetOwners());
+
         return "allpets";
     }
 

@@ -25,8 +25,8 @@ body{
 .navbar.scrolled {
     background-color: red;
     transition: background-color 500ms;
-    color: white;
-    -webkit-text-decoration-color: white;
+    color: blue;
+    /*-webkit-text-decoration-color: blue;*/
 }
 .form-inline {
     background-color: burlywood;
@@ -38,7 +38,7 @@ body{
     padding-top: 0%;
     margin-top: 0%;
     margin-bottom: 0%;
-    color: white;
+    color: black;
     border-radius: 0%;
     width: 100%;
 }
